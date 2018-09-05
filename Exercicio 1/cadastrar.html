@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+	<title>Cadastro de alunos </title>
+	    <link href="link.css" rel="stylesheet">
+	    <style>
+  h1 {
+    color: red;
+    font-family: arial;
+  }
+  .fundo {
+    background-color: blue;
+  }
+  p.maior {
+    color: #c6c6c6;
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+<nav>
+  <ul class="menu">
+        <li><a href="listar.html">Listar</a></li>
+        <li><a href="home.html">Sair</a></li>                
+</ul>
+</nav><br><br><br>
+	<h1>Dados do Cadastro</h1>
+	<form method="post" action="validar.html">
+
+		<label for="nome">Nome</label>
+		<input type="text" name="nome" placeholder="Nome">
+
+		<label for ="endereco">Endereço</label>
+		<input type ="text" name="endereco" placeholder="Endereço">
+
+		<label for = "matricula">Matricula</label>
+		<input type="text" name="matricula" maxlength="9" placeholder="00.0.0000">
+		<br><br>
+
+		<label for="genero">Gênero</label><br>
+
+		<input type="radio" id="feminino" name="genero" value="F">
+		<label for ="feminino">Feminino</label> <br>
+
+		<input type ="radio" id="masculino" name="genero" value="M"> 
+		<label for="masculino">Masculino</label> <br><br>
+
+
+			<label for="Cidade"> Cidade</label>
+			<select name="cidade">
+				<option value ="0">Selecione</option>
+				<option value ="1">João Monlevade</option>
+				<option value ="2"> Itabira</option>
+				<option value ="3">Alvinópolis</option>
+			</select><br><br><br>
+
+
+			<input type ="submit" value="Cadastrar">
+
+			<input type="reset" value ="Limpar">
+		</form>
+</body>
+</html>

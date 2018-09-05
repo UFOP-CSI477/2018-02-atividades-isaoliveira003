@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lista de Alunos(as)</title>
+	<link href="link.css" rel="stylesheet">
+	<style>
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	table {
+		width:100%;
+	}
+	h1 {
+		color: red;
+		font-family: arial;
+	}
+	.fundo {
+		background-color: blue;
+	}
+	p.maior {
+		color: #c6c6c6;
+		text-align: center;
+	}
+	</style>
+
+</head>
+<body>
+	<nav>
+  <ul class="menu">
+        <li><a href="cadastrar.html">Cadastrar</a></li>
+        <li><a href="home.html">Sair</a></li>                
+</ul>
+</nav><br><br><br>
+
+	<h1>Lista de Alunos</h1>
+	<table>
+		<caption style="font-size:20pt; color: #0000CD;">UFOP</caption>
+		<!-- Para criar linhas-->
+		<thead>
+			<tr>
+				<th class="maior">Matrícula</th>
+				<th>Nome</th>
+				<th>E-mail</th>
+				<th>Curso</th>
+			</tr>
+		</thead>
+
+			<tbody>
+				<tr>
+					<td>15.2.0789</td>
+					<td>Mateus</td>
+					<td>mateus@aluno.ufop.edu.br</td>
+					<td>SJM</td>
+				</tr>
+				<tr>
+					<td>16.2.8904</td>
+					<td>Carol</td>
+					<td>Carol@aluno.ufop.edu.br</td>
+					<td>CJM</td>
+				</tr>
+
+				<tr>
+					<td>17.2.3456</td>
+					<td>Priscila</td>
+					<td>Priscila@aluno.ufop.edu.br</td>
+					<td>EJM</td>
+				</tr>
+
+				<tr>
+					<td>12.1.5678</td>
+					<td>Gabriel</td>
+					<td>gabriels@aluno.ufop.edu.br</td>
+					<td>EE</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="1">Total de pessoas:</td>
+					<td colspan="1">4</td>
+				</tr>
+			</tfoot>
+
+		</table>
+	</body>
+	</html>
