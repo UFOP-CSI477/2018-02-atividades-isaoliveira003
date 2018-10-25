@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Calculo IMC</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="form.js"></script>
+</head>
+<body>
+	<div class="container jumbotron">
+		<center><h1>Calculo de IMC</h1></center>
+		<form name="dados">
+
+			<!--PESO-->
+			<div>
+				<label for="peso">Qual seu peso?</label>
+				<input type="text" name="peso" id="peso" class="form-control">
+			</div>
+
+			<!--ALTURA -->
+			<div>
+				<label for="altura">Qual sua altura?</label>
+				<input type="text" name="altura" id="altura" class="form-control">
+			</div>
+
+			<br><div class="row">
+				<div class="col-sm-4">
+				<label for="ihcl">IMC:</label>
+				<input type="text" name="ihcl" class="form-control" readonly>
+				</div>
+
+				<div class="col-sm-4">
+				<label for="Resultado">Resultado</label>
+				<input type="text" name="Resultado" class="form-control" readonly>
+				</div>
+
+				<div class="col-sm-4">
+				<label for="pesoIdeal">Peso Ideal</label>
+				<input type="text" name="pesoIdeal" class="form-control" readonly>
+				</div>
+			</div>
+
+			<br><center><button type="button" name="calcula" class="btn btn-dark" onclick="calcular()">Calcular</button></center>
+		</form>
+	</div>
+	<script>
+	console.log("Documento Carregado.");
+	</script>
+</body>
+</html>
